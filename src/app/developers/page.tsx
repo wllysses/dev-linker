@@ -31,6 +31,9 @@ export default async function DevelopersPage() {
       </h2>
 
       <div className="mt-4 w-full grid grid-cols-4 gap-4 max-lg:grid-cols-3 max-md:grid-cols-2 max-sm:grid-cols-1">
+        {!developers.length && (
+          <span className="text-sm">Nenhum desenvolvedor cadastrado.</span>
+        )}
         {developers?.map((developer) => (
           <Card key={developer.id}>
             <CardHeader className="flex-row gap-2 items-center">

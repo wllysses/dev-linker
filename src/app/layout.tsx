@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
-import { NextAuthProvider } from "@/providers/next-auth.provider";
+import { NextAuthProvider } from "@/providers/auth";
 import { Header } from "@/components/ui/header";
 import { Toaster } from "@/components/ui/toaster";
 import "./globals.css";

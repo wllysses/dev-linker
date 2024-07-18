@@ -37,6 +37,7 @@ export default async function DeveloperProjectsPage({
       </h2>
 
       <div className="w-full my-6 grid grid-cols-4 gap-4 max-lg:grid-cols-3 max-md:grid-cols-2 max-sm:grid-cols-1">
+        {!repositories.length && <span>Nenhum repositório.</span>}
         {repositories?.map((repository: any) => (
           <Card key={repository.id}>
             <CardHeader>
